@@ -1,7 +1,6 @@
 .hero {
     position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
 }
 
 .hero-paragraph {
@@ -10,7 +9,6 @@
 
 .hero-browser {
     position: relative;
-    margin-top: 80px;
 }
 
 .hero-browser-inner {
@@ -26,7 +24,8 @@
 .bubble-1,
 .bubble-2,
 .bubble-3,
-.bubble-4 {
+.bubble-4,
+.bubble-5 {
     position: absolute;
 
     svg {
@@ -69,6 +68,12 @@
         width: 104px;
     }
 }
+.bubble-5 {
+    top: 40px;
+    padding: 30px;
+
+
+}
 
 @include media( '>medium' ) {
 
@@ -86,7 +91,8 @@
     .bubble-1,
     .bubble-2,
     .bubble-3,
-    .bubble-4 {
+    .bubble-4,
+    .bubble-5 {
 
         svg {
             width: auto;
@@ -111,5 +117,9 @@
     .bubble-4 {
         top: -35px;
         right: -110px;
+    }
+
+    .bubble-5 {
+        top: 100px;
     }
 }
