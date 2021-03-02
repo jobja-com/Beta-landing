@@ -9,16 +9,27 @@
 
 .hero-browser {
     position: relative;
+    
 }
 
 .hero-browser-inner {
-    position: relative; /* To display bubbles below the browser */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden; /* To display bubbles below the browser */
 
     svg {
-        width: 100%;
-        height: auto;
         overflow: visible;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
+
+    
 }
 
 .bubble-1,
@@ -43,7 +54,7 @@
 }
 
 .bubble-2 {
-    bottom: 0;
+    bottom: -30px;
     right: -30px;
 
     svg {
@@ -69,8 +80,13 @@
     }
 }
 .bubble-5 {
-    top: 40px;
-    padding: 30px;
+    position: relative;
+    padding: 50px 30px;
+
+    .control:last-of-type {
+        // margin-bottom: 100px;
+    
+    } 
 
 
 }
@@ -120,6 +136,7 @@
     }
 
     .bubble-5 {
-        top: 100px;
+        padding: 150px 130px 100px;
     }
+    
 }

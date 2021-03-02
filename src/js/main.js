@@ -9,12 +9,20 @@
     /* global ScrollReveal */
     const sr = window.sr = ScrollReveal()
 
+    sr.reveal('.bubble-5', {
+      duration: 1000,
+      distance: '40px',
+      easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
+      origin: 'bottom',
+      interval: 900
+    })
+
     sr.reveal('.hero-title, .hero-paragraph, .newsletter-header, .newsletter-form', {
       duration: 1000,
       distance: '40px',
       easing: 'cubic-bezier(0.5, -0.01, 0, 1.005)',
       origin: 'bottom',
-      interval: 150
+      interval: 250
     })
 
     sr.reveal('.bubble-3, .bubble-4, .hero-browser-inner, .bubble-1, .bubble-2', {
