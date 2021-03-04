@@ -1,15 +1,15 @@
 {
-  "name": "ava",
+  "name": "landing",
   "version": "1.0.0",
-  "description": "Ava Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "welcome landing",
+  "author": "Safura javan<safura.javan@gmail.com>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/ava.git"
+    "url": "https://github.com/jobja-com/Beta-landing.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/ava/issues"
+    "url": "https://github.com/jobja-com/Beta-landing/issues"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -37,7 +37,7 @@
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^3.1.0",
     "imagemin-cli": "^3.0.0",
     "mkdirp": "^0.5.1",
@@ -49,6 +49,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/ava#readme",
+  "homepage": "https://github.com/jobja-com/Beta-landing#readme",
   "main": ".eslintrc.js"
 }
