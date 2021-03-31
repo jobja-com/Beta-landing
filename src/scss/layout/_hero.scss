@@ -13,7 +13,8 @@
 
 .hero-browser {
     position: relative;
-    
+    @include shadow;
+
 }
 
 .hero-browser-inner {
@@ -33,7 +34,7 @@
         left: 0;
     }
 
-    
+
 }
 
 .bubble-1,
@@ -89,8 +90,8 @@
 
     .control:last-of-type {
         // margin-bottom: 100px;
-    
-    } 
+
+    }
 
 
 }
@@ -98,8 +99,7 @@
 @include media( '>medium' ) {
 
     .hero {
-        padding-top: 80px;
-        padding-bottom: 120px;
+        padding-bottom: 200px;
     }
 
     .hero-paragraph {
@@ -142,5 +142,5 @@
     .bubble-5 {
         padding: 150px 130px 100px;
     }
-    
+
 }
