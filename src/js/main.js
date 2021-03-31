@@ -67,12 +67,3 @@
     // })
   }
 }())
-
-    // eslint-disable-next-line no-unexpected-multiline
-(function () {
-  $('#submit').on('click', function(event) {
-    event.preventDefault();
-    //your code
-  });
-
-    }())
