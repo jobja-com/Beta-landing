@@ -174,11 +174,11 @@
                                         <input type="hidden" name="category" value="Welcome">
                                     </div>
                                     <div class="control">
-                                        <div data-size="compact" class="h-captcha" data-sitekey="2d219d01-32f0-4b3d-8370-d47d25043b61"></div>
-                                    </div>
-                                    <div class="control">
-                                        <button  class="button button-primary button-shadow"
-                                                 type="submit">😎 Get early
+                                        <button  class="button button-primary button-shadow h-captcha"
+                                                 type="submit"
+                                                 data-sitekey="2d219d01-32f0-4b3d-8370-d47d25043b61"
+                                                 data-callback="onSubmit"
+                                        >😎 Get early
                                             access </button>
                                     </div>
 
@@ -314,7 +314,11 @@
             </div>
         </footer>
     </div>
-
+    <script type="text/javascript">
+        function onSubmit(token) {
+            document.getElementById("my-form").submit();
+        };
+    </script>
     <script src="dist/js/main.min.js"></script>
 </body>
 
