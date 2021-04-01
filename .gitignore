@@ -171,3 +171,4 @@ $RECYCLE.BIN/
 
 dist/
 .idea/
+node_modules
