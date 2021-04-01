@@ -316,7 +316,10 @@
     </div>
     <script type="text/javascript">
         function onSubmit(token) {
-            document.getElementById("my-form").submit();
+            if(valid){
+                document.getElementById("my-form").submit();
+            }
+
         };
     </script>
     <script src="dist/js/main.min.js"></script>
