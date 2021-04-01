@@ -170,7 +170,8 @@
                                 <form id="my-form" method="post" action="https://rest-rc.jobja.com/api/v1/contents/mailing-list/" class="hero-form newsletter-form field field-grouped is-revealing">
 
                                     <div class="control control-expanded">
-                                        <input class="input" required type="email" name="email" placeholder="Your best email...">
+                                        <p id="error"></p>
+                                        <input class="input" id="email" required type="email" name="email" placeholder="Your best email...">
                                         <input type="hidden" name="category" value="Welcome">
                                     </div>
                                     <div class="control">
@@ -316,7 +317,11 @@
     </div>
     <script type="text/javascript">
         function onSubmit(token) {
-            if(valid){
+
+            var inpObj = document.getElementById("email");
+            if (!inpObj.checkValidity()) {
+                document.getElementById("error").innerHTML = inpObj.validationMessage;
+            } else {
                 document.getElementById("my-form").submit();
             }
 
